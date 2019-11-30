@@ -1,5 +1,5 @@
-name: steinway
-description: A new Flutter project.
+name: Sinatra
+description: A simple piano simulator.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -24,6 +24,12 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+  # For the audio player
+  audioplayers: any
+
+  # What you call an icon living?
+  flutter_launcher_icons: "^0.7.3"
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -41,7 +47,20 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - assets/audio/A2.mp3
+    - assets/audio/Ab2.mp3
+    - assets/audio/B2.mp3
+    - assets/audio/Bb2.mp3
+    - assets/audio/C2.mp3
+    - assets/audio/C3.mp3
+    - assets/audio/D2.mp3
+    - assets/audio/Db2.mp3
+    - assets/audio/E2.mp3
+    - assets/audio/Eb2.mp3
+    - assets/audio/F2.mp3
+    - assets/audio/G2.mp3
+    - assets/audio/Gb2.mp3
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
@@ -70,3 +89,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png" 
